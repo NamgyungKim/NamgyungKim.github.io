@@ -3,6 +3,7 @@ title: "[Git] Good Commit Message"
 layout: single
 categories: Git
 tag: [git, commit]
+comments: true
 ---
 
 ### 이름 짓는것에 대해...
