@@ -7,8 +7,8 @@ tag: [모듈, React, prop-types]
 
 <br />
 
-**prop-types**는 전달받은 데이터의 type이 의도된 바와 일치하는지를 검사해주는 모듈이다.
-
+## prop-types
+prop-types는 전달받은 데이터의 type이 의도된 바와 일치하는지를 검사해주는 모듈이다.
 
 ## type 검사를 왜 할까?
 : 작업하는 프로젝트의 규모가 커질수록 예상치 못한 곳에서 에러가 발생하는 일이 많아진다.
@@ -17,6 +17,7 @@ tag: [모듈, React, prop-types]
 개발자들은 이 경고 메시지를 보고 좀 더 수월하게 문제 원인을 찾고 에러를 고칠 수 있게 된다.<br />
 만일 이런 타입 검사를 하지 않았을 경우, 많은 시간을 에러를 찾기 위해 쏟아부어야 할지도 모른다.
 
+<br />
 
 ## 사용법
 
@@ -28,7 +29,8 @@ $ npm i prop-types
 import PropTypes from 'prop-types';
 
 Component_name.propTypes = {
-    name: PropTypes.string.isRequired // isRequired를 붙이면 값을 받아오지 않을 경우에 에러창을 띄움.
+    name: PropTypes.string.isRequired 
+    // isRequired를 붙이면 값을 받아오지 않을 경우에 에러창을 띄움.
     array: PropTypes.arrayOf(PropTypes,number) // 배열의 경우
     object: PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -38,7 +40,15 @@ Component_name.propTypes = {
 }
 ```
 
+Warning!!
+![error]({{ site.url }}{{ site.baseurl }}/assets/images/2021-10-10-prop-types/error.png)
+
+<br />
+<br />
+<br />
 <br />
 
-[npm site: prop-types](https://www.npmjs.com/package/prop-types)
+
+**< Refer to >**<br />
+[npm: prop-types](https://www.npmjs.com/package/prop-types)
 
