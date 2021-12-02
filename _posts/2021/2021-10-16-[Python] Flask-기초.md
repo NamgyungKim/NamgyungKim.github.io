@@ -5,7 +5,7 @@ categories: Python
 tag: [python, flask]
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-10-16-Flask/Flask_logo.png" alt="flask_logo" style="width:80%; display: block; margin: 50px auto">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/common/Flask_logo.png" alt="flask_logo" style="width:80%; display: block; margin: 50px auto">
 
 ## Flask란
 

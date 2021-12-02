@@ -41,7 +41,7 @@ Component_name.propTypes = {
 ```
 
 Warning!!
-![error]({{ site.url }}{{ site.baseurl }}/assets/images/2021-10-10-prop-types/error.png)
+![error]({{ site.url }}{{ site.baseurl }}/assets/images/2021-10/error.png)
 
 <br />
 <br />

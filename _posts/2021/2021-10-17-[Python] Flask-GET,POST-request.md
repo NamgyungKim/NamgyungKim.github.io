@@ -5,6 +5,8 @@ categories: Python
 tag: [python, flask, mongoDB]
 ---
 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/common/Flask_logo.png" alt="flask_logo" style="width:80%; display: block; margin: 50px auto">
+
 ## Post
 
 ```js
