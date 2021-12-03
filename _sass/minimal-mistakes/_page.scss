@@ -89,8 +89,12 @@ body {
 
 .page__content {
   h2 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    padding-left: .5em;
+    line-height: 1.6em;
+    background-color: rgba($color: #11999e, $alpha: .3);
+  }
+  h3{
+    color: #c06b6f;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -113,7 +117,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: .9em;
   }
 
   /* paragraph indents */

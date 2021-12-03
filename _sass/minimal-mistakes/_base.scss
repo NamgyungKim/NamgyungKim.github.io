@@ -39,7 +39,6 @@ h1 {
 }
 
 h2 {
-  color: #c06b6f;
   font-size: $h-size-2;
 }
 
@@ -108,11 +107,14 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  margin: 2em 1em 2em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  margin: 1em 1em 1em 0;
+  border-radius: .5em;
+  padding: 1em 1em 1em 1em;
+  background-color: rgba($color: gray, $alpha: 0.2);
+
+  p{
+    margin: 0 !important;
+  }
 
   cite {
     font-style: italic;
