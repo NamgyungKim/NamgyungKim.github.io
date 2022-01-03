@@ -289,5 +289,6 @@ defaults:
       share: false
       related: true
       show_date: true
-
+      sideber_main: true
+      
 date_format: "%Y-%m-%d"

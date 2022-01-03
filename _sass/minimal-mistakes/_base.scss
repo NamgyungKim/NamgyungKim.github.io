@@ -355,6 +355,24 @@ input[type="submit"],
 .btn,
 .highlight,
 .archive__item-teaser {
+  text-decoration: none;
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+a:hover{
+  text-decoration: underline;
+}
+.page__taxonomy::before {
+  content: "(";
+}
+.page__taxonomy::after {
+  content: ")";
+}
+.page__taxonomy-item-tag::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #40514e;
 }
