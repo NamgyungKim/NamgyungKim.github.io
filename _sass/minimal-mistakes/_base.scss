@@ -108,11 +108,11 @@ abbr[data-original-title] {
 
 blockquote {
   margin: 1em 1em 1em 0;
-  border-radius: .5em;
+  border-radius: 0.5em;
   padding: 1em 1em 1em 1em;
   background-color: rgba($color: gray, $alpha: 0.2);
 
-  p{
+  p {
     margin: 0 !important;
   }
 
@@ -359,7 +359,7 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 .page__taxonomy::before {
@@ -375,4 +375,7 @@ a:hover{
   height: 10px;
   margin-right: 5px;
   background-color: #40514e;
+}
+.page__taxonomy-item-category::after {
+  content: " ";
 }

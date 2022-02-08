@@ -5,12 +5,19 @@ permalink: categories/project
 author_profile: true
 sidebar_main: true
 ---
+
 ---
-<br/>
-![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/common/translation_talk.png)
 
-기간: 2021-12-29~
+## - 번역톡
 
-{% assign posts = site.categories.project %}
+기간: 2021-12-29 ~ <br />
+**GitHub:**[https://github.com/TranslationTalk/Front-End](https://github.com/TranslationTalk/Front-End)
+{% assign posts = site.categories.TranslationTalk %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
 
+---
+
+## - 원티드 프리온보딩 코스 선발과제
+
+기간: 2022-02-06 ~ 2022-02-08<br />
+**GitHub:** [https://github.com/NamgyungKim/wanted_pre_onboarding](https://github.com/NamgyungKim/wanted_pre_onboarding)
