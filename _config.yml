@@ -287,7 +287,7 @@ defaults:
       read_time: false
       comments: true
       share: false
-      related: true
+      related: false
       show_date: true
       sideber_main: true
       
