@@ -41,15 +41,15 @@ body {
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
-
+  
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(100% - #{$right-sidebar-width} - 60px);
     padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
     float: left;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -62,18 +62,37 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 50px;
       width: 100%;
       clear: both;
+      .page__meta-date{
+        font-weight: 300;
+      }
+      a {
+        color: #087c72;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .page__taxonomy {
+        a::before{
+          content: '#';
+        }
+        
+      }
     }
+
   }
 }
 
 .page__title {
   margin-top: 0;
   line-height: 1;
-
+  font-size: 34px;
+  font-family: $nanum-myeongjo;
+  font-weight: bold;
   a {
-    color: $text-color;
+    color: $color-333;
     text-decoration: none;
   }
 
@@ -88,13 +107,14 @@ body {
 }
 
 .page__content {
+  font-weight: 300;
   h2 {
     padding-left: 0.5em;
     line-height: 1.6em;
     background-color: rgba($color: #11999e, $alpha: 0.1);
   }
   h3 {
-    color: #c06b6f;
+    color: $color-333;
   }
 
   h1,
@@ -337,9 +357,7 @@ body {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 8px;
-  padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
 
   &:hover {

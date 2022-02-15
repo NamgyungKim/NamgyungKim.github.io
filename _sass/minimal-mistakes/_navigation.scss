@@ -33,7 +33,7 @@
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
+      width: calc(100% - #{$right-sidebar-width} - 60px);
     }
   }
 
@@ -42,7 +42,8 @@
   }
 
   .current {
-    font-weight: bold;
+    font-weight: 100;
+    color: $color-333
   }
 }
 
@@ -82,6 +83,7 @@
       color: $muted-text-color;
       border: 1px solid mix(#000, $border-color, 25%);
       border-radius: 0;
+      
 
       &:hover {
         color: $link-color-hover;
@@ -182,7 +184,7 @@
   a {
     display: block;
     margin: 0 1rem;
-    color: $masthead-link-color;
+    color: $color-333;
     text-decoration: none;
     -webkit-transition: none;
     transition: none;
@@ -440,7 +442,7 @@
 
 .nav__list .nav__items {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: .8rem;
 
   a {
     color: inherit;
@@ -516,7 +518,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: #666;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -541,10 +543,11 @@
   a {
     display: block;
     padding: 0.25rem 0.75rem;
-    color: $muted-text-color;
+    color: $muted-text-color !important;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
+    text-decoration: none !important;
 
     &:hover {
       color: $text-color;

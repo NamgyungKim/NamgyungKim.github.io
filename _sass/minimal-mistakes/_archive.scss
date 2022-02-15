@@ -8,19 +8,20 @@
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$right-sidebar-width-narrow} - 60px);
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(100% - #{$right-sidebar-width} - 60px);
     padding-right: $right-sidebar-width;
   }
 }
 
 .archive__item {
   position: relative;
-
+  border-bottom: 1px solid #ccc;
+  padding: 35px 0;
   a {
     position: relative;
     z-index: 10;
@@ -32,12 +33,12 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 1.414em 0 0;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
-
+  font-size: 1.4em;
+  font-weight: bold;
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
@@ -75,7 +76,7 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
-
+  font-weight: 100;
   & + p {
     text-indent: 0;
   }
@@ -128,6 +129,8 @@
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.8em;
+    font-weight: 100;
+    color: $color-333;
   }
 }
 

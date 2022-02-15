@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Namgyung"
   avatar           : "/assets/images/Profile.jpg"
-  bio              : "Hello"
+  bio              : "FE 개발자"
   location         : "South of Korea"
   email            : # "namgyung.kim@gmail.com"
   links:
@@ -192,7 +192,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "\n\n\n\n"
 incremental: false
 
 
