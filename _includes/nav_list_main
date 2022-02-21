@@ -23,8 +23,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "etc" %}
-                        <li><a href="/categories/etc" class="">etc ({{category[1].size}})</a></li>
+                    {% if category[0] == "DOM" %}
+                        <li><a href="/categories/dom" class="">DOM ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -32,6 +32,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "JavaScript" %}
                         <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "etc" %}
+                        <li><a href="/categories/etc" class="">etc ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
