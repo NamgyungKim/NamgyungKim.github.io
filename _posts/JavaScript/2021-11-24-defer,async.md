@@ -1,12 +1,15 @@
 ---
 title: "[JS] defer/async 의 차이"
+sidebar_main: true
 layout: single
-categories: javascript
-tag: [javascript]
-
+categories: 
+  - JavaScript
+tag: [js]
 ---
 
 ![테스트 이미지]({{ site.url }}{{ site.baseurl }}/assets/images/common/js_logo.jpg)
+
+
 
 ## defer/async 가 나오기 이전에
 
