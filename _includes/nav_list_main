@@ -32,8 +32,8 @@
             <span class="nav__sub-title">Record</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "til" %}
-                        <li><a href="/categories/til" class="">TIL ({{category[1].size}})</a></li>
+                    {% if category[0] == "wil" %}
+                        <li><a href="/categories/wil" class="">WIL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
