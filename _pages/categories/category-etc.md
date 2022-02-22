@@ -1,5 +1,5 @@
 ---
-title: "Today I Learned"
+title: "ect"
 layout: archive
 permalink: categories/etc
 author_profile: true

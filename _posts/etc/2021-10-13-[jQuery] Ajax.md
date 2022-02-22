@@ -1,7 +1,10 @@
 ---
 title: "[jQuery] Ajax사용법"
+sidebar_main: true
 layout: single
-categories: jQuery
+categories:
+  - etc
+  - jQuery
 tag: [Ajax, jQuery]
 ---
 

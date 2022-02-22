@@ -1,7 +1,9 @@
 ---
 title: "[Python] Flask-기초"
+sidebar_main: true
 layout: single
-categories: Python
+categories: 
+  - Python
 tag: [python, flask]
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: "[Git] Good Commit Message"
+sidebar_main: true
 layout: single
-categories: Git
+categories:
+ - Git
 tag: [git, commit]
 ---
 commit message 작성

@@ -1,7 +1,9 @@
 ---
 title: "[Python] 크롤링"
+sidebar_main: true
 layout: single
-categories: Python
+categories: 
+  - Python
 tag: [크롤링, python]
 ---
 

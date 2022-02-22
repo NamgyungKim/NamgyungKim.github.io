@@ -1,7 +1,9 @@
 ---
 title: "[Python] mongoDB조작"
+sidebar_main: true
 layout: single
-categories: Python
+categories: 
+  - Python
 tag: [python, mongoDB]
 ---
 

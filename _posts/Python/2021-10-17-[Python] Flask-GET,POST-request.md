@@ -1,7 +1,9 @@
 ---
 title: "[Python] Flask-GET,POST요청"
+sidebar_main: true
 layout: single
-categories: Python
+categories: 
+  - Python
 tag: [python, flask, mongoDB]
 ---
 
