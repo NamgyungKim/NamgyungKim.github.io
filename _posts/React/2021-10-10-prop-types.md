@@ -1,5 +1,5 @@
 ---
-title: "[모듈] porp-types"
+title: "[React] porp-types란?"
 layout: single
 categories: React
 tag: [모듈, React, prop-types]
