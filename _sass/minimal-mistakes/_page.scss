@@ -87,7 +87,7 @@ body {
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  line-height: 1.5;
   font-size: 34px;
   font-family: $nanum-myeongjo;
   font-weight: bold;
@@ -111,7 +111,7 @@ body {
   h2 {
     padding-left: 0.5em;
     line-height: 1.6em;
-    background-color: rgba($color: #11999e, $alpha: 0.1);
+    border-bottom: 1px solid #bbb;
   }
   h3 {
     color: $color-333;
