@@ -33,7 +33,7 @@
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width} - 60px);
+      width: calc(100% - #{$right-sidebar-width});
     }
   }
 
@@ -509,13 +509,14 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  background-color: $background-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+  // background-color: $background-color;
+  // border: 1px solid $border-color;
+  // border-radius: $border-radius;
+  // -webkit-box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
 
   .nav__title {
+    display: none;
     color: #fff;
     font-size: $type-size-6;
     background: #666;
@@ -523,44 +524,46 @@
     border-top-right-radius: $border-radius;
   }
 
+  a:hover {
+    color: #333 !important
+  }
+
   // Scrollspy marks toc items as .active when they are in focus
   .active a {
-    @include yiq-contrasted($active-color);
+    color: #333 !important;
   }
 }
 
 .toc__menu {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 8px;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
-
+  border-left: 2px solid #ddd;
+  
   @include breakpoint($large) {
-    font-size: 1em;
+    font-size: 16px;
   }
 
   a {
     display: block;
-    padding: 0.25rem 0.75rem;
-    color: $muted-text-color !important;
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    padding: 0.25rem 0;
+    color: #aaa !important;
+    line-height: 1.2;
+    // border-bottom: 1px solid $border-color;
     text-decoration: none !important;
 
-    &:hover {
-      color: $text-color;
-    }
   }
-
+  
   li ul > li a {
     padding-left: 1.25rem;
-    font-weight: normal;
   }
-
+  
   li ul li ul > li a {
     padding-left: 1.75rem;
+    &:hover {
+      color: black;
+    }
   }
 
   li ul li ul li ul > li a {

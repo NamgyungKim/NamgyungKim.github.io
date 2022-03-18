@@ -39,11 +39,11 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    padding-right: 100px;
   }
   
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width} - 60px);
+    width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 
@@ -52,7 +52,6 @@ body {
     margin-top: 2em;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
     clear: both;
 
     .page__content,
@@ -109,7 +108,6 @@ body {
 .page__content {
   font-weight: 300;
   h2 {
-    padding-left: 0.5em;
     line-height: 1.6em;
     border-bottom: 1px solid #bbb;
   }
