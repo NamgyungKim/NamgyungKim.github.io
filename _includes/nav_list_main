@@ -68,13 +68,6 @@
             <span class="nav__sub-title">Record</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "wil" %}
-                        <li><a href="/categories/wil" class="">WIL ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
                     {% if category[0] == "errorHandling" %}
                         <li><a href="/categories/errorHandling" class="">Error Handling 🚨 ({{category[1].size}})</a></li>
                     {% endif %}
