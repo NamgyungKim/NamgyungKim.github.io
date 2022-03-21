@@ -13,15 +13,15 @@ toc_sticky: true
 
 <br />
 
-# 배열 함수 정리
+# 📖 배열 함수 정리
 
 js 에서의 배열을 일반적인 배열의 동작을 흉내낸 객체(Object)이다. 
 
 <br />
 
-## 배열 함수
+## 💡 배열 함수
 
-### 배열 생성 함수
+### ✔ 배열 생성 함수
 ```js
 const arr1 = []
 const arr2 = new Array()
@@ -39,7 +39,7 @@ const arr5 = Array.from(Array(5), function(v, i){
 <br/>
 <br/>
 
-### join
+### ✔ join
 
 - 배열의 각 값들을 합쳐주는 함수
 
@@ -51,9 +51,9 @@ arr.join('/') // 1/2/3/4/5/6
 <br/>
 <br/>
 
-### reverse
+### ✔ reverse
 
-🚨 원본 배열이 바뀜 주의해서 사용!
+원본 배열이 바뀜 주의해서 사용!🚨 
 - 배열을 뒤집어주는 함수  
 
 ```js
@@ -64,7 +64,7 @@ arr.reverse() // [5,4,3,2,1]
 <br/>
 <br/>
 
-### concat
+### ✔ concat
 
 - 두 배열을 합치는 함수
 
@@ -77,9 +77,9 @@ arr1.concat(arr2) // [1,2,3,4,5,6]
 <br/>
 <br/>
 
-### push, pop, shift, unshift
+### ✔ push, pop, shift, unshift
 
-🚨 원본 배열이 바뀜 주의해서 사용!
+원본 배열이 바뀜 주의해서 사용!🚨
 - push(x): 배열 뒤에 x를 추가
 - pop(): 배열 가장 마지막 값을 제거
 - unshift(x): 배열 맨 앞에 x 추가
@@ -88,7 +88,7 @@ arr1.concat(arr2) // [1,2,3,4,5,6]
 <br/>
 <br/>
 
-### slice
+### ✔ slice
 
 - slice(x,y): 배열의 중간 값을 가져온다.
   원본배열을 바꾸지 않는다.
@@ -102,9 +102,9 @@ arr1.slice(2,4) // [3,4]
 <br/>
 <br/>
 
-###  splice
+### ✔ splice
 
-🚨 원본 배열이 바뀜 주의해서 사용!
+원본 배열이 바뀜 주의해서 사용!🚨
 - splice(x,y): 배열의 중간 값을 제거
   index x부터 시작해서 갯수y개를 제거
 
@@ -116,9 +116,9 @@ arr2.splice(1,2) // [1,4,5]
 <br/>
 <br/>
 
-## 배열의 순회
+## 💡 배열의 순회
 
-### for... of
+### ✔ for... of
 ```js
 for(const item of arr){
   console.log(item) // 1 ~ 5 까지 순서대로 찍힌다.
@@ -127,7 +127,7 @@ for(const item of arr){
 
 <br/>
 
-### forEach
+### ✔ forEach
 
 ```js
 arr.for((item,index)=>{})
@@ -135,7 +135,7 @@ arr.for((item,index)=>{})
 
 <br/>
 
-### map
+### ✔ map
 
 배열을 return 한다.
 
@@ -145,7 +145,7 @@ const data = arr.map((item,index) => {return ...})
 
 <br/>
 
-### filter
+### ✔ filter
 
 조건문에 맞는 item만 배열로 반환 한다.
 
@@ -155,7 +155,7 @@ const data = arr.filter((item,index) => {return (true/false 조건문)})
 
 <br/>
 
-### some
+### ✔ some
 
 조건에 맞는 데이터가 있는지여부를 boolean으로 반환 한다.
 
