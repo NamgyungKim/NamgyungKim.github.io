@@ -1,11 +1,16 @@
 ---
-title: "[Web API]로컬스토리지에 저장, 삭제"
+title: "[Web API] 로컬스토리지에 데이터 저장, 삭제 하기"
 sidebar_main: true
 layout: single
 categories: 
-  - Web API 
-tag: [번들링, webpack]
+  - Web
+tag: [Local Storage]
 ---
+
+
+![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022/03/12_1.png)  
+
+<br />
 
 ## 로컬스토리지에 데이터 저장 및 제거
 
