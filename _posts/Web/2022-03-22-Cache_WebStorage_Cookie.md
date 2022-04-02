@@ -14,7 +14,7 @@ tag: [Local Storage]
 # 📖 [Web] 웹 저장소들의 특징(Web Storage, Cookie, Cache)
 
 개발자 모드를 보면 Application탭에 Storage를 볼 수 있다.  
-Local Storage, Session Storage, Cookies 등 이것들은 브라우저 저장소는 앱또는 웹에 방문한 유저들에 대한 정보를 저장해준다.
+Local Storage, Session Storage, Cookies 등 이 브라우저 저장소는 앱또는 웹에 방문한 유저들에 대한 정보를 저장해준다.
 **글을 임시로 저장**하거나, 그외 **서버에 저장할 필요가 없는데이터를 저장**한다.
 
 ![이미지]({{ site.url }}{{ site.baseurl }}/assets/images/2022/03/22.jpg)
@@ -22,8 +22,8 @@ Local Storage, Session Storage, Cookies 등 이것들은 브라우저 저장소�
 <br />
 
 ## 💡 Cookie 
-- 만료기간(지정가능)동안 **일시적**으로 데이터를 저장할 수 있다.   
-- **브라우저에서 요청이 있을 시 자동으로 서버에 전달**한다.  
+- 만료기간(지정가능) 동안 **일시적**으로 데이터를 저장할 수 있다.   
+- http 요청 시 헤더에 쿠키가 같이 나가기 때문에 쿠키의 사이즈가 커지면 요청할 때 나가는 헤더도 커지게 된다.  
 - 브라우저를 닫아도 데이터가 유지된다.   
 - 클라이언트에서 자체적으로 조작할 수 있으며, 보안이 낮다.  
 - 각 데이터별로 다음과 같은 옵션을 설정할 수 있다. 
@@ -55,8 +55,12 @@ Local Storage, Session Storage, Cookies 등 이것들은 브라우저 저장소�
 
 ### Localstorage  
 - key,Value타입의 저장소, 기능지원이 얼마 없다.  
+- localStorage에는 string만 넣을 수 있다. 
+- 도메인이 같다면 다른 탭안에서 같은 storage를 공유한다. 
 - 데이터의 만료기간이 없으며 사용자가 지우지 않는 한 **영구적으로 보존**된다.  
-- 설정을 저장하거나, 브라우저를 닫고 열었을때도 보관되어야하는 데이터를 저장할 때 사용된다.
+- 설정을 저장하거나, 브라우저를 닫고 열었을때도 보관되어야하는 데이터를 저장할 때 사용된다.  
+
+  [🔗 Localstorage 저장,삭제](https://namgyungkim.github.io/web/LocalStorage/)
 
 <br />
 

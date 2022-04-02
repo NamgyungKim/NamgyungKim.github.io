@@ -24,6 +24,8 @@ tag: [Local Storage]
 
 ```js
 // Local Storage에 저장
+
+
 const setLocalData = (key, value) =>
   localStorage.setItem(key, JSON.stringify(value));
 
@@ -39,7 +41,14 @@ localStorage.clear();
 export { setLocalData, getLocalData, removeLocalData }
 ```
 
-
+저장 시 속성을 수정하는 방식으로 하면 length,toString같은 내장 함수를 덮어씌울 수 있기 때문에
+아래와 같은 setItem을 통해 추가하는 것을 권장한다.
+```js
+localStorage.key= 'value';
+localStorage['key']='value';
+localStorage.setItem('key', JSON.stringify('value')); // 👍권장
+// localStorage에는 문자열만 저장 가능하므로JSON.stringify 해주는 것이 좋다.
+```
 
 
 <br /><br /><br /><br />
